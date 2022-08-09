@@ -1,0 +1,110 @@
+/* ====== imported fonts ====== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap'); /* for titles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500&display=swap');
+
+:root {
+    /* ====== Paddings & margins ====== */
+    --section-padding: 2rem 0 4rem;
+    --m-1-5: 1.5rem;
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /* ====== Font & typography ====== */
+    --font-test1: font-family: 'Playfair Display', serif; /* for titles */
+    --font-test2: font-family: 'Poppins', sans-serif;
+    --font-test3: font-family: 'Roboto', sans-serif;
+    --font-test4: font-family: 'Archivo Narrow', sans-serif;
+    --font-test5: font-family: 'Domine', serif; /* body text */
+
+    /* ====== Fonts/icons size ====== */
+    --font-size: .94rem;
+    --font-small: .81rem;
+    --font-smaller: .75rem;
+    --font-large: 2rem;
+    --title-h1: 1.5rem;
+    --title-h2: 1.25rem;
+}
+
+/* ====== Font size for large Screens ====== */
+@media screen and (min-width: 60.5rem) {
+    :root {
+        --font-size: 1rem;
+        --font-small: .875rem;
+        --font-smaller: .813rem;
+        --font-large: 3rem;
+        --title-h1: 2.25rem;
+        --title-h2: 1.5rem;
+    }
+}
+
+/* ====== Base CSS ====== */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* body {
+    
+}
+ */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* cores */
+/* roxo
+#800080 dark purple
+#9654D8 - cor da Ayleen
+#9370db - medium purple
+
+#7b68ee- medium state blue
+
+amarelo:
+#FDD245 - cor da Ayleen
+#f0e68c - khaki
+#fff44f - lemon yellow
+#fffacd - yellow ciphon
+#fcf75e - icterine
+
+laranja:
+#FFB001 - cor da Ayleen
+#fe5a1d - diferent orange
+#fd5800 - willpower orange
+
+preto:
+#2f4f4f - dark slate grey
+#333333 - dark charcoal
+#100c08 - smoky black
+#080808 vamp black
+
+*/
+
