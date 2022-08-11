@@ -1,4 +1,5 @@
 /* ====== imported fonts ====== */
+/* testing these fonts and will choose 2 */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap'); /* for titles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
@@ -7,7 +8,7 @@
 
 :root {
     /* ====== Paddings & margins ====== */
-    --section-padding: 2rem 0 4rem;
+    --section-padding: 2rem .8rem 4rem;
     --m-1-5: 1.5rem;
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -18,19 +19,23 @@
     --mb-3: 3rem;
 
     /* ====== Font & typography ====== */
-    --font-test1: font-family: 'Playfair Display', serif; /* for titles */
-    --font-test2: font-family: 'Poppins', sans-serif;
-    --font-test3: font-family: 'Roboto', sans-serif;
-    --font-test4: font-family: 'Archivo Narrow', sans-serif;
-    --font-test5: font-family: 'Domine', serif; /* body text */
+    --font-test1: 'Playfair Display', serif; /* for titles */
+    --font-test2: 'Poppins', sans-serif;
+    --font-test3: 'Roboto', sans-serif;
+    --font-test4: 'Archivo Narrow', sans-serif;
+    --font-test5: 'Domine', serif; /* body text */
 
     /* ====== Fonts/icons size ====== */
-    --font-size: .94rem;
-    --font-small: .81rem;
+    --font-size: 1.1rem;
+    --font-icon: 1.25rem;
     --font-smaller: .75rem;
-    --font-large: 2rem;
-    --title-h1: 1.5rem;
-    --title-h2: 1.25rem;
+    --font-large: 1.65rem;
+    --title-h1: 1.85rem;
+    --title-h2: 1.31rem;
+
+    /* ====== colors ====== */
+    --body-bg: #FDD245;
+    --PURPLE: #9654D8 ;
 }
 
 /* ====== Font size for large Screens ====== */
@@ -40,7 +45,7 @@
         --font-small: .875rem;
         --font-smaller: .813rem;
         --font-large: 3rem;
-        --title-h1: 2.25rem;
+        --title-h1: 2.35rem;
         --title-h2: 1.5rem;
     }
 }
@@ -58,10 +63,13 @@ html {
     scroll-behavior: smooth;
 }
 
-/* body {
-    
+body {
+    background-color: var(--body-bg);
+    font-size: var(--font-size);
+    font-family: var(--font-test3);
+    font-weight: 300;
 }
- */
+
 
 a {
     text-decoration: none;
@@ -76,10 +84,133 @@ img {
     height: auto;
 }
 
+h2 {
+    font-size: var(--title-h2);
+    text-align: center;
+    line-height: 1.1;
+}
+
+/* ====== reusable CSS ====== */
+.section__padding {
+    padding: var(--section-padding);
+}
+
+.list__margin li {
+    margin-bottom: var(--mb-0-75);
+}
+
+.CTA-link {
+    align-self: center;
+    background-color: var(--PURPLE);
+    color: #fff;
+    font-weight: bold;
+    padding: .8rem 1.45rem;
+    border-radius: .85rem;
+    margin-top: .5rem;
+}
 
 
+/* ====== Custom CSS ====== */
+.hero__section-h1 {
+    font-family: var(--font-test2);
+    font-size: var(--title-h1);
+    padding-bottom: var(--mb-2);
+    text-align: center;
+    color: var(--PURPLE);
+    font-weight: ;
+}
+
+.hero__content-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--mb-1);
+}
+
+.hero__section-article {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.hero__section-article h2 {
+    color: var(--PURPLE);
+    margin-bottom: var(--mb-0-5);
+}
+
+.icon-check {
+    margin-right: .6rem;
+    font-size: var(--font-icon);
+    color: var(--PURPLE);
+}
+
+.list__margin li {
+    display: flex;
+}
+
+/* ====== profile effect ====== */
+.img-outer-circle {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background: --PURPLE;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: var(--mb-1);
+}
+
+.img-outer-circle::before {
+    content: '';
+    position: absolute;
+    inset: 0 90px;
+    background: orange;
+    transition: .6s;
+    animation: animate 6s linear infinite;
+}
+
+.img-outer-circle:hover::before {
+    inset: 0;
+}
+
+.img-outer-circle::after {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    background: var(--body-bg);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.img-box {
+    position: absolute;
+    inset: 12px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.figcaption {
+    font-weight: 600;
+    font-size: var(--font-large);
+    margin-bottom: var(--mb-0-75);
+}
 
 
+/* ====== Keyframes ====== */
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pallet of color shades to choose from */
 /* cores */
 /* roxo
 #800080 dark purple
@@ -88,12 +219,6 @@ img {
 
 #7b68ee- medium state blue
 
-amarelo:
-#FDD245 - cor da Ayleen
-#f0e68c - khaki
-#fff44f - lemon yellow
-#fffacd - yellow ciphon
-#fcf75e - icterine
 
 laranja:
 #FFB001 - cor da Ayleen
