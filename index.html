@@ -8,6 +8,7 @@
     <link rel="icon" href="assets/images/reels.ico?v=2" type="image/x-icon">
     <link rel="shortcut icon" href="images/reels.ico" type="image/x-icon" />
     <meta name="description" content="A Masterclass Reels do Babado chegou para te tirar do limbo, te ajudar a finalmente entender como os Reels do instagram funcionam e como usar e abusar dessa ferramenta para engajar com sua audiencia">
+    <meta name="author" content="Ayleen Bown">
     <meta name="keywords" content="Babado Criativo, Masterclass Reels do Babado, curso reels, como usar reels instagram, Ayleen Bown">
 
     <!-- OpenGraph Meta Tags -->
@@ -21,14 +22,21 @@
     <!-- ====== Font Awesome ====== -->
     <script src="https://kit.fontawesome.com/5c34627e0f.js" crossorigin="anonymous"></script>
 
+    <!--========== swiper CSS ========== -->
+    <link rel="stylesheet" href="assets/CSS/swiper-bundle.min.css">
+
     <!-- ====== Custom CSS ====== -->
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 
 <body>
     <main class="main">
-            <section id="hero-section" class="section__padding">
-                <h1 class="hero__section-h1">Imersão  Reels Do Babado</h1>
+        <head>
+            <figure class="fig-babado">
+                <img class="img-reels" src="/assets/images/banner.jpg" alt="Reels do babado, imersao reels do babado">
+            </figure>
+        </head>
+            <section id="hero-section" class="section-hero">
                 <div class="hero__content">
                     <div class="figure-container">
                         <figure class="hero__content-figure">
@@ -39,13 +47,18 @@
                                 </div>
                             <figcaption class="figcaption">Ayleen Bown</figcaption>
                         </figure>
-                        <figure class="hero__content-figure fig-babado">
-                            <img class="img-reels" src="/assets/images/reelsdobabado.png" alt="">
-                            <figcaption class="figcaption">Imersão Reels do zero</figcaption>
-                        </figure>
+                        <div class="fig-babado-container">
+                            <div class="programacao">
+                                <p class="programacao-info">IMERSÃO AO VIVO</p>
+                                <p class="programacao-info">Tire todas as suas dúvidas comigo! </p>
+                                <p class="date-time"><i class="fa-solid fa-calendar-days icon-target"></i> 03/09/2022</p>
+                                <p><i class="fa-solid fa-clock icon-target"></i>16:00h - UK</p>
+                                <p><i class="fa-solid fa-clock icon-target"></i>12:00h - Brasil</p>
+                            </div>
+                        </div>
                     </div>
                     <article class="hero__section-article">
-                        <h2>O que voce vai aprender na Imersão Reels do Babado</h2>
+                        <h1 class="hero__section-h1">O que você vai aprender na Imersão Reels do Zero</h1>
                         <ul class="list__margin">
                             <li><i class="fa-solid fa-circle-check icon-check"></i> Como a ferramenta funciona e cada função dentro dela.</li>
                             <li><i class="fa-solid fa-circle-check icon-check"></i> Como o algoritimo funciona.</li>
@@ -55,7 +68,7 @@
                             <li><i class="fa-solid fa-circle-check icon-check"></i> Como encontrar e usar a seu favor as tendencias do momento.</li>
                             <li><i class="fa-solid fa-circle-check icon-check"></i> Como usar o autoconhecimento para entender a sua mente criativa.</li>
                         </ul>
-                        <a class="CTA-link" href="https://hotmart.com/pt-br/marketplace/produtos/imersao-reels-do-zero/N73800898E" target="_blank">Quero Participar <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                        <a class="CTA-link" href="https://hotmart.com/pt-br/marketplace/produtos/imersao-reels-do-zero/N73800898E" target="_blank">Quero Participar <i class="fa-solid fa-arrow-right-from-bracket btn-icon"></i></a>
                     </article>
                 </div>
             </section>
@@ -63,11 +76,18 @@
             <section class="section__padding section-chamado">
                 <h2>Cansada de tentar entender como funcionam os Reels?</h2>
                 <h2>Cansada de gastar muito tempo tentando alcançar sua audiência e recebendo muito pouco de volta?</h2>
-                <p>A Imersão Reels do Babado chegou pra te tirar do Limbo e te ajudar a finalmente entender como os Reels funcionam e como usar e abusar dessa ferramenta para engajar com sua audiência, vender seus produtos, atrair mais seguidores e principalmente se divertir durante todo o processo. </p>
+                <p>A Imersão Reels do Zero chegou pra te tirar do Limbo e te ajudar a finalmente entender como os Reels funcionam e como usar e abusar dessa ferramenta para engajar com sua audiência, vender seus produtos, atrair mais seguidores e principalmente se divertir durante todo o processo. </p>
+                <div class="custom-shape-divider-bottom-1660569740">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                    </svg>
+                </div>
             </section>
 
-            <section class="section__padding">
-                <h2>PRA QUEM É A Imersão REELS DO BABADO </h2>
+            <section class="section__padding section-target">
+                <h2>PRA QUEM É A Imersão REELS DO Zero </h2>
                 <ul class="list__margin">
                     <li><i class="fa-solid fa-bullseye icon-target"></i> Pra quem quer aprender como os Reels funcionam e se destacar no digital.</li>
                     <li><i class="fa-solid fa-bullseye icon-target"></i> Pra quem nunca fez um Reel ou pra quem ainda não entende como a ferramenta funciona.</li>
@@ -76,37 +96,69 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="section-swipper">
                 <h2>O QUE MINHAS ALUNAS ESTÃO DIZENDO...</h2>
-                <p>Aqui vai ter os slides passando com os comentarios</p>
+                <!-- Swiper markup-->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/assets/images/menssagem.png" alt="menssagem, Ayllen!!! Quero te dar os parabens"></div>
+                    <div class="swiper-slide"><img src="/assets/images/message1.png" alt="imagem de, choquei, passou dos 3 mil"></div>
+                    <div class="swiper-slide"><img src="/assets/images/message2.png" alt="menssagem de depoimento"></div>
+                    <div class="swiper-slide"><img src="/assets/images/message4.png" alt="menssagem no whatsapp"></div>
+                    <div class="swiper-slide"><img src="/assets/images/dep1.png" alt="comentarios no instagram"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="custom-shape-divider-bottom-1660577265">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                    </svg>
+                </div>
             </section>
 
-            <section>
-                <figure>
-                    <img src="assets/images/Ayleen-about.jpg" alt="Foto de perfil de Ayleen Bown, sorrindo e usando oculos, brincos coloridos e sweeter preto">
-                </figure>
-                <article>
+            <section class="section__padding section-about">
+                <h2>Quem será sua mentora</h2>
+                <div class="about-container">
+                    <figure class="img-criadora">
+                        <img src="assets/images/Ayleen-about.png" alt="Foto de perfil de Ayleen Bown, sorrindo e usando oculos, brincos coloridos e sweeter preto">
+                    </figure>
+                    <div class="about-content">
+                        <div class="about-content-blocks">
+                            <p><b>Autor:</b></p>
+                            <p>Ayleen Bown</p>
+                        </div>
+                        <div class="about-content-blocks">
+                            <p><b>experiencia:</b></p>
+                            <p>10 anos no mundo digital</p>
+                        </div>
+                    </div>
+                </div>
+                <article class="about-article">
                     <p>Sua hostess nesse evento imperdível é uma multipotencial apaixonada pelo mundo criativo; curiosa, falante, ligada no 220V, com uma bagagem dentro do digital de mais de 10anos (sim, eu comecei quando a internet era discada).</p>
                     <p>Hoje trabalho como creative designer e sou responsável por tudo que engloba a criatividade dentro do digital. Edição de vídeos, edição de fotos, criação de conteúdo, engajamento, stories e obviamente a minha mais nova paixão REELS.</p>
                     <p>Com uma leveza no ensinar e muita calma no processo eu ensino alunas a alcançarem seus objetivos e sonhos, através da criatividade e do auto conhecimento.</p>
                 </article>
             </section>
 
-            <section>
-                <p>Venha participar do meu grupo de Whatsppp, onde você terá acesso VIP ao link para a Masterclass, os bônus pré Masterclass e principalmente o super desconto de lançamento no dia do evento!!</p>
-                <p>Preencha abaixo e vem arrasar comigo gata garota!</p>
+            <section class="bottom-CTA">
+                <div class="bottom-CTA-info">
+                    <p>O instagram é uma das ferramentas mais populares hoje em dia, tanto para divulgação do seu trabalho quanto para comunicação com clientes, através dessa imersão você vai entender como atrair mais clientes, mais vendas, mais seguidores e se destacar nesse mundo totalmente inovador com personalidade e criatividade.</p>
+                </div>
 
-                <form action="">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" required aria-required="true" maxlength="50" aria-invalid="false">
+                <a class="bottom-CTA-btn" href="https://hotmart.com/pt-br/marketplace/produtos/imersao-reels-do-zero/N73800898E" target="_blank">Quero Participar <i class="fa-solid fa-arrow-right-from-bracket btn-icon"></i></a>
 
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required aria-required="true" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="100" aria-invalid="false">
+                <div class="custom-shape-divider-bottom-1660569750">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                    </svg>
+                </div>
 
-                    <input type="tel" name="phone" id="phone" placeholder="Telefone" aria-required="false" pattern="^[+]?([(][0-9]{1,3}[)][-]?)?([0-9][-]?){3,16}[0-9]$" maxlength="50" aria-invalid="true">
-
-                    <button type="submit">Quero Participar</button>
-                </form>
             </section>
 
     </main>
@@ -114,5 +166,11 @@
     <footer>
         © 2022 BY AYLEEN BOWN FOR BABADOCRIATIVO
     </footer>
+
+     <!-- ========== swipper JS =========== -->
+  <script src="assets/JavaScript/swiper-bundle.min.js"></script>
+
+  <!-- ============= Custom JavaScript ======== -->
+  <script src="/assets/JavaScript/script.js"></script>
 </body>
 </html>
