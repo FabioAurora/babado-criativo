@@ -398,7 +398,7 @@ footer {
 .img-outer-circle::after {
     content: '';
     position: absolute;
-    inset: 10px;
+    inset: 40px;
     background: var(--body-bg);
     border-radius: 50%;
     z-index: 1;
