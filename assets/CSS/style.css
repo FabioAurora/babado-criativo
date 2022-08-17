@@ -19,11 +19,8 @@
     --mb-3: 3rem;
 
     /* ====== Font & typography ====== */
-    --font-test1: 'Playfair Display', serif; /* for titles */
-    --font-test2: 'Poppins', sans-serif;
-    --font-test3: 'Roboto', sans-serif;
-    --font-test4: 'Archivo Narrow', sans-serif;
-    --font-test5: 'Domine', serif; /* body text */
+    --font-title: 'Poppins', sans-serif;
+    --font-text: 'Roboto', sans-serif;
 
     /* ====== Fonts/icons size ====== */
     --font-size: .94rem;
@@ -64,7 +61,7 @@ html {
 body {
     background-color: var(--body-bg);
     font-size: var(--font-size);
-    font-family: var(--font-test3);
+    font-family: var(--font-text);
     font-weight: 300;
     color: var(--font-clr-dark);
 }
@@ -95,10 +92,6 @@ h2 {
 .main {
     max-width: 64rem;
     margin: 0 auto;
-}
-
-.fig-babado {
-    z-index: 20;
 }
 
 .section-hero {
@@ -135,10 +128,18 @@ background: var(--btn-hover-clr);
 
 /* ====== Custom CSS ====== */
 
+.banner {
+    width: 100%;
+}
+
+.main-title-ctn {
+    margin-top: 1.4rem;
+}
+
 .hero__section-h1 {
-    font-family: var(--font-test2);
+    font-family: var(--font-title);
     font-size: var(--title-h1);
-    padding-bottom: var(--mb-2);
+    padding-bottom: var(--mb-0-5);
     text-align: center;
     color: var(--PURPLE);
     font-weight: 600;
@@ -146,23 +147,15 @@ background: var(--btn-hover-clr);
 
 .figure-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: var(--mb-2);
-}
-
-.fig-babado-container {
-    order: -1;
 }
 
 .hero__content-figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.img-reels {
-    margin-bottom: var(--mb-0-75);
-    width: 100%;
 }
 
 .hero__section-article {
@@ -195,18 +188,18 @@ background: var(--btn-hover-clr);
     color: var(--caption4);
 }
 
-.fig-babado-container {
+.programacao-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: var(--mb-2);
+    order: -1;
 }
 .programacao {
     display: flex;
     flex-direction: column;
-    gap: .75rem;
+    gap: 1rem;
     font-weight: 400;
-    width: 300px;
 }
 
 .date-time {
@@ -388,7 +381,11 @@ footer {
     inset: 0 40px;
     background: var(--ORANGE)   ;
     transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
     animation: animate 6s linear infinite;
+    -webkit-animation: animate 6s linear infinite;
+    -moz-animation: animate 6s linear infinite;
 }
 
 .img-outer-circle:hover::before {
@@ -423,7 +420,8 @@ footer {
 
   .swiper-slide {
     text-align: center;
-
+    height: 500px;
+    
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -452,9 +450,13 @@ footer {
 @keyframes animate {
     0% {
         transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
     }
 }
 
@@ -633,6 +635,10 @@ footer {
 /* ====== swipper slider CSS ======*/
 .swiper {
     width:60%;
+  }
+
+  .swiper-slide {
+    height: 540px;
   }
 
   .swiper-slide img {
