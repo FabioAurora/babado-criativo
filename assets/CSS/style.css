@@ -363,53 +363,17 @@ footer {
 .custom-shape-divider-bottom-1660569750 .shape-fill {
     fill: #9654D8;
 }
-
-/* ====== profile border animation ====== */
-.img-outer-circle {
-    position: relative;
-    width: 140px;
-    height: 140px;
-    background: --PURPLE;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: var(--mb-0-25);
-}
-
-.img-outer-circle::before {
-    content: '';
-    position: absolute;
-    inset: 0 40px;
-    background: var(--ORANGE)   ;
-    -webkit-transition: .6s;
-    transition: .6s;
-    -webkit-animation: animate 6s linear infinite;
-    animation: animate 6s linear infinite;
-}
-
-.img-outer-circle:hover::before {
-    inset: 0;
-}
-
-.img-outer-circle::after {
-    content: '';
-    position: absolute;
-    inset: 40px;
-    background: var(--body-bg);
-    border-radius: 50%;
-    z-index: 1;
-}
-
 .img-box {
-    position: absolute;
-    inset: 8px;
-    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    border-radius: 50%;
+    width: 140px;
+    height: 140px;
     overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid #FFB001;
 }
+
 
 /* ====== swipper slider CSS ======*/
 .swiper {
