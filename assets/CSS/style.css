@@ -298,7 +298,7 @@ footer {
     color: var(--font-clr-light);
 }
 
-/*======  wave shape */
+/*======  wave shape ====== */
 .custom-shape-divider-bottom-1660569740 {
     position: absolute;
     bottom: 0;
@@ -380,12 +380,10 @@ footer {
     position: absolute;
     inset: 0 40px;
     background: var(--ORANGE)   ;
-    transition: .6s;
     -webkit-transition: .6s;
-    -moz-transition: .6s;
-    animation: animate 6s linear infinite;
+    transition: .6s;
     -webkit-animation: animate 6s linear infinite;
-    -moz-animation: animate 6s linear infinite;
+    animation: animate 6s linear infinite;
 }
 
 .img-outer-circle:hover::before {
@@ -449,14 +447,12 @@ footer {
 /* ====== Keyframes ====== */
 @keyframes animate {
     0% {
-        transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
