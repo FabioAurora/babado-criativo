@@ -533,15 +533,6 @@ footer {
     height: 71px;
 }
 
-/* ====== profile border animation ====== */
-.img-outer-circle {
-    width: 180px;
-    height: 180px;
-}
-
-.img-outer-circle::before {
-    inset: 0 60px;
-}
 
 /* ====== swipper slider CSS ======*/
 .swiper {
